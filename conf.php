@@ -147,7 +147,7 @@ limit = 10
 ; (CIDR) to be allowed to create pastes, set these here. Invalid IPs will be
 ; ignored. If multiple values are to be exempted, the list needs to be comma
 ; separated. Leave unset to allow anyone to create pastes.
-; creators = "1.2.3.4,10.10.10/24"
+creators = "172.27.0.1"
 
 ; (optional) if your website runs behind a reverse proxy or load balancer,
 ; set the HTTP header containing the visitors IP address, i.e. X_FORWARDED_FOR
