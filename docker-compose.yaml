@@ -1,0 +1,13 @@
+version: '2'
+services:
+  privatebin:
+    image: "privatebin/nginx-fpm-alpine"
+    ports:
+     - "8898:8080"
+
+  nginx:
+    image: "nginx"
+    ports:
+    - "8899:80"
+    volumes:
+    - ./nginx.conf:/etc/nginx/nginx.conf:ro
