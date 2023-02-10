@@ -4,6 +4,8 @@ services:
     image: "privatebin/nginx-fpm-alpine"
     ports:
      - "8898:8080"
+    volumes:
+     - ./conf.php:/srv/cfg/conf.php:ro
 
   nginx:
     image: "nginx"
